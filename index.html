@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai Vinto - Sushi Lovers Palermo</title>
+    <style>
+        /* Reset e Font di base */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a1a1a; /* Sfondo scuro */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #1a1a1a;
+            width: 100%;
+            max-width: 450px;
+            min-height: 100vh; 
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        /* --- BARRA SUPERIORE --- */
+        .top-nav {
+            padding: 10px 20px;
+            text-align: right;
+            font-size: 11px;
+            color: #ccc;
+        }
+
+        .top-nav span {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #d63384; 
+            border-radius: 3px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        
+        .social-icon.tw {
+            background-color: #1da1f2;
+        }
+
+        /* --- LOGO --- */
+        .logo-section {
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo-main {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 28px;
+            color: #eaddcf;
+            display: block;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-family: sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ff4b4b;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* --- TITOLO --- */
+        .hero-text {
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #eaddcf;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            color: #ccc;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        /* --- MESSAGGIO --- */
+        .congrats-msg {
+            text-align: center;
+            font-size: 14px;
+            color: #eee;
+            margin-bottom: 20px;
+            padding: 0 20px;
+            line-height: 1.5;
+        }
+
+        /* --- IMMAGINE --- */
+        .img-placeholder {
+            width: 100%;
+            height: 180px;
+            background: url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+        /* --- CARD DATI VINCITORE --- */
+        .winner-form {
+            background-color: #252525;
+            padding: 25px;
+            margin: 0 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px; /* Font più leggibile */
+            color: #000;
+            font-weight: bold;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        /* --- SEZIONE QR CODE --- */
+        .qr-section {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            background-color: white; /* Sfondo bianco per il QR */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .qr-img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .qr-caption {
+            display: block;
+            color: #333;
+            font-size: 11px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- TERMINI --- */
+        .terms-box {
+            margin: 30px 20px;
+            font-size: 11px;
+            color: #888;
+            line-height: 1.4;
+        }
+
+        .terms-box ul {
+            padding-left: 15px;
+            margin: 5px 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            padding: 20px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="top-nav">
+            <span>Noshi Lonaro</span>
+            <span>Cripe</span>
+            <span class="social-icon"></span>
+            <span class="social-icon tw"></span>
+        </div>
+
+        <div class="logo-section">
+            <span class="logo-main">Sushi Lovers</span>
+            <span class="logo-sub">Palermo</span>
+        </div>
+
+        <div class="hero-text">
+            <h1>Hai Vinto un Pranzo di Sushi!</h1>
+            <p>Un'esperienza per veri intenditori</p>
+        </div>
+
+        <div class="congrats-msg">
+            Complimenti! Hai vinto un pranzo gratuito per quattro persone in uno dei migliori ristoranti di sushi a Palermo!
+        </div>
+
+        <div class="img-placeholder"></div>
+
+        <div class="winner-form">
+            <div class="form-group">
+                <span class="form-label">Nome Completo</span>
+                <input type="text" class="form-input" value="Simone Contino" readonly>
+            </div>
+            <div class="form-group">
+                <span class="form-label">Telefono</span>
+                <input type="text" class="form-input" value="+39 328 085 0159" readonly>
+            </div>
+             <div class="form-group">
+                <span class="form-label">Premio</span>
+                <input type="text" class="form-input" value="PRANZO X4 - COMPLETO" readonly style="color: #007e33;">
+            </div>
+
+            <div class="qr-section">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=VOUCHER-SIMONE-CONTINO-PALERMO-2026" alt="QR Code" class="qr-img">
+                <span class="qr-caption">Scansiona alla cassa</span>
+            </div>
+        </div>
+
+        <div class="terms-box">
+            <strong>Termini e Condizioni:</strong>
+            <ul>
+                <li>Validità: Il premio è utilizzabile entro il 5 Febbraio 2026.</li>
+                <li>Prenotazione: Obbligatoria con almeno 24 ore di anticipo.</li>
+                <li>Partecipanti: Massimo 4 persone.</li>
+                <li>Non convertibile: Il premio non può essere convertito in denaro.</li>
+                <li>Riservato ai maggiorenni.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Sushi Lovers Palermo - Tutti i diritti riservati.
+        </div>
+    </div>
+
+</body>
+</html>
